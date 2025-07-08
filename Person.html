@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Person</title>
+  <link rel="stylesheet" href="bootstrap.min.css" />
+  <script src="Person.js" defer></script>
+</head>
+
+<body>
+  <div class="container min-vh-100 d-flex justify-content-center align-items-center">
+    <div class="w-100 position-relative" id="user" style="max-width: 600px;">
+      <form class="bg-light rounded-4 shadow p-4">
+        <div class="text-center mb-4">
+          <h3>Your Event</h3>
+          <h5>Register</h5>
+        </div>
+
+        <div class="row g-3">
+          <div class="col-md-6">
+            <label for="First" class="form-label">First Name:</label>
+            <input type="text" id="First" class="form-control" placeholder="First Name..." />
+          </div>
+          <div class="col-md-6">
+            <label for="Last" class="form-label">Last Name:</label>
+            <input type="text" id="Last" class="form-control" placeholder="Last Name..." />
+          </div>
+          <div class="col-12">
+            <label for="Email" class="form-label">Email Address:</label>
+            <input type="email" id="Email" class="form-control" placeholder="Email Address..." />
+          </div>
+          <div class="col-12">
+            <label for="Company" class="form-label">Company (if applicable):</label>
+            <input type="text" id="Company" class="form-control" placeholder="Company..." />
+          </div>
+          <div class="col-12">
+            <label for="Physical" class="form-label">Physical Address:</label>
+            <input type="text" id="Physical" class="form-control" placeholder="Physical Address..." />
+          </div>
+          <div class="col-12">
+            <label class="form-label">Date of Birth:</label>
+            <div class="row g-2">
+              <div class="col-md-4">
+                <input type="text" id="Month" class="form-control" placeholder="Month" />
+              </div>
+              <div class="col-md-4">
+                <input type="text" id="Day" class="form-control" placeholder="Day" />
+              </div>
+              <div class="col-md-4">
+                <input type="text" id="Year" class="form-control" placeholder="Year" />
+              </div>
+            </div>
+          </div>
+          <button class="col-3 col-xl-2 btn bg-primary mx-auto" id="submit">SUBMIT</button>
+        </div>
+      </form>
+    </div>
+    <div class="w-100 position-absolute d-none top-0">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>FullName</th>
+            <th>Email</th>
+            <th>Company</th>
+            <th>Physical</th>
+            <th>Date of Brith</th>
+
+          </tr>
+        </thead>
+        <tbody id="Table_Value" style="font-size: 20px;">
+
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+
+</html>
